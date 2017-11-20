@@ -1,0 +1,4 @@
+ npm install rpio --save
+ npm install rpio --save
+npm install body-parser --save^C
+npm install --save express jade
