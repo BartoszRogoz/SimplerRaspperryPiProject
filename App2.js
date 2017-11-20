@@ -24,8 +24,8 @@ router.all('/', function (req, res, next) {
 });
 
 
-
-
+app.use('/a',pinToogle);
+app.use('/',loginpage);
 
 app.listen(9000);  
 module.exports = app;  
