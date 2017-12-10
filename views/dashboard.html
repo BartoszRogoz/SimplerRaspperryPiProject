@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+	
+	
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+	
+    <!-- MetisMenu CSS -->
+    <link href="/stylesheets/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/stylesheets/sb-admin-2.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+	<!-- jQuery -->
+    <script src="javascripts/jquery.min.js"></script>
+     <!-- Bootstrap Core JavaScript -->
+    <script src="javascripts/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="javascripts/metisMenu.min.js"></script>
+	<script src="javascripts/sb-admin-2.js"></script>
+
+	<script type="text/javascript" src="javascripts/bootstrap-toggle.min.js"></script>
+	 <link rel="stylesheet" href="/stylesheets/bootstrap-toggle.min.css">
+	
+     <style>
+	 .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    
+}
+div
+{ 
+	font-size:medium;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  </style>
+</head>
+
+<body>
+	 <script type="text/javascript" src="/javascripts/dashboard-client.js"></script>
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="dashboard">RasPI3 WebITProject v1.0</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Rogoz Bartosz</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Wczoraj</em>
+                                    </span>
+                                </div>
+                                <div>Co masz zrobić </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Plata Jakub</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Dziś</em>
+                                    </span>
+                                </div>
+                                <div>Witam...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 1</strong>
+                                        <span class="pull-right text-muted">40% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 2</strong>
+                                        <span class="pull-right text-muted">20% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 3</strong>
+                                        <span class="pull-right text-muted">60% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 4</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Tasks</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="/"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="javascrip:void(0)" id="TwojeUrzadzeniasidemenu"><i class="fa fa-dashboard fa-fw"></i> Twoje urządzenia</a>
+                        </li>
+                        <li>
+                            <a href="javascrip:void(0)" id="PortyRasPisidemenu"><i class="fa fa-bar-chart-o fa-fw"></i> Porty IO Raspberry PI3</a>
+                            
+                        </li>
+                        <li>
+                            <a href="javascrip:void(0)" id="Ustawieniasidemenu"><i class="fa fa-table fa-fw"></i> Ustawienia</a>
+                        </li>
+                        
+                        
+                        <li>
+                           <a href="javascrip:void(0)" id="TwojDomsidemenu"><i class="fa fa-sitemap fa-fw"></i> Twój dom </a> 
+                            
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+           <div id="TwojeUrządzenia"  >
+           <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Twoje urządzenia</h1>
+                 
+                </div>
+            </div>
+           <div class="row" id="Urzadzeniawigety">    <!-- ADDONY -->
+				
+				<div class="col-lg-3 col-md-6">
+                  <div class="panel panel-primary">
+                        <div class="panel-heading" style="background-color:red !important">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-unlock-alt fa-5x fa-spin"></i>
+                                </div>
+                                <div class="col-xs-9 text-right pull-right">
+								<div class="huge"> Zamek 1	</div>
+									PORT_ZAMKA
+                     <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="14">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#modal-container-642461" data-toggle="modal" role="button">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                         </a>
+		 					<div class="modal fade" id="modal-container-642461" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		 						<div class="modal-dialog">',
+		 							<div class="modal-content">
+		 							<div class="modal-header">
+		 									<h4 class="modal-title" id="myModalLabel">
+		 									Zamek 1
+		 									</h4>
+		 								</div>
+		 								<div class="modal-body">
+		 									GPIO_14
+		 								</div>
+		 								<div class="modal-footer">
+		 									<button type="button" class="btn btn-default" data-dismiss="modal">
+		 										Close
+		 									</button> 
+		 								</div>
+		 							</div>
+		 						</div>
+		 					</div>    
+                     </div>
+                </div> 			
+                <div class="col-lg-3 col-md-6">
+                  <div class="panel panel-primary">
+                        <div class="panel-heading" style="background-color:green !important">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-unlock-alt fa-5x fa-spin"></i>
+                                </div>
+                                <div class="col-xs-9 text-right pull-right">
+								<div class="huge"> Zamek 2	</div>
+									PORT_ZAMKA
+                     <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="2">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#modal-container-642" data-toggle="modal" role="button">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                         </a>
+		 					<div class="modal fade" id="modal-container-642" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		 						<div class="modal-dialog">',
+		 							<div class="modal-content">
+		 							<div class="modal-header">
+		 									<h4 class="modal-title" id="myModalLabel">
+		 									Zamek 2
+		 									</h4>
+		 								</div>
+		 								<div class="modal-body">
+		 									GPIO_2
+		 								</div>
+		 								<div class="modal-footer">
+		 									<button type="button" class="btn btn-default" data-dismiss="modal">
+		 										Close
+		 									</button> 
+		 								</div>
+		 							</div>
+		 						</div>
+		 					</div>    
+                     </div>
+                </div> 
+                <div class="col-lg-3 col-md-6">
+                  <div class="panel panel-primary">
+                        <div class="panel-heading" style="background-color:SlateBlue !important">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-low-vision fa-5x fa-spin"></i>
+                                </div>
+                                <div class="col-xs-9 text-right pull-right">
+								<div class="huge"> Roleta 1	</div>
+									PORT_OPEN
+                     <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="14">
+                                    PORT_CLOSE
+                     <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="15">
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#modal-container-64246" data-toggle="modal" role="button">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                         </a>
+		 					<div class="modal fade" id="modal-container-64246" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		 						<div class="modal-dialog">',
+		 							<div class="modal-content">
+		 							<div class="modal-header">
+		 									<h4 class="modal-title" id="myModalLabel">
+		 									Zamek 2
+		 									</h4>
+		 								</div>
+		 								<div class="modal-body">
+		 								OPEN :	GPIO_14
+		 								CLOSE :	GPIO_15
+		 								</div>
+		 								<div class="modal-footer">
+		 									<button type="button" class="btn btn-default" data-dismiss="modal">
+		 										Close
+		 									</button> 
+		 								</div>
+		 							</div>
+		 						</div>
+		 					</div>    
+                     </div>
+                </div> 	
+                
+                <div class="col-lg-3 col-md-6">
+                  <div class="panel panel-primary">
+                        <div class="panel-heading" style="background-color:Orange !important">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-video-camera fa-5x fa-spin"></i>
+                                </div>
+                                <div class="col-xs-9 text-right pull-right">
+								<div class="huge"> Kamera 1	</div>
+							
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#modal-container-6" data-toggle="modal" role="button">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                         </a>
+		 					<div class="modal fade" id="modal-container-6" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		 						<div class="modal-dialog">',
+		 							<div class="modal-content">
+		 							<div class="modal-header">
+		 									<h4 class="modal-title" id="myModalLabel">
+		 									Kamera 1
+		 									</h4>
+		 								</div>
+		 								<div class="modal-body">
+												  <canvas id="myCanvas" height="500"width="310"></canvas> 
+												
+											<!--	<video src=" id="video" width="500" height="500" autoplay type="video/ogg">  </video> -->
+		 								</div>
+		 								<div class="modal-footer">
+		 									<button type="button" class="btn btn-default" data-dismiss="modal">
+		 										Close
+		 									</button> 
+		 								</div>
+		 							</div>
+		 						</div>
+		 					</div>    
+                     </div>
+                </div> 																			
+			</div>
+			
+			
+			<div class="panel-footer text-right"> <!-- DodajURządzenie -->
+				
+				<button type="button" id="btnDodajurzadzenie" href="#modal-container-btnDodajurzadzenie"  data-toggle="modal" class="btn btn-default pull-right"> Dodaj urządzenie </button> 
+				<div class="modal fade" data-keyboard="false" data-backdrop="false" id="modal-container-btnDodajurzadzenie" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content" >
+										<div class="modal-header">
+											<h4 class="modal-title text-left" >
+												Dodaj nowe urzadzenie
+											</h4>
+											
+										</div>
+										<div class="modal-body" >
+											<div class="form-inline">
+												<span  style="float:left" > Nazwa Urządzenia: </span>	
+												<input type="text" class="form-control"  id="">				 							
+											</div>	
+											
+											
+											
+											
+											
+											<div class="form-inline">
+												<span  style="float:left" > Pokój: </span>	
+												 <div class="btn-group ">						 
+														<button class="btn btn-default "id="SETPokoj">
+																brak
+																</button> 
+																	<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+																		<span class="caret"></span>
+																	</button>
+																		<ul class="dropdown-menu" id="GETListaPokoi">
+																			
+																		</ul>
+												</div>
+											</div>	
+											<div class="form-inline">
+												<span  style="float:left" > Typ urządzenia: </span>	
+												<div class="btn-group ">						 
+														<button class="btn btn-default "id="SETKategoria" href="">
+																brak
+																</button> 
+																	<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+																		<span class="caret"></span>
+																	</button>
+																		<ul class="dropdown-menu" id="GETListaKategori">
+														
+																		</ul>
+												</div>
+												
+											</div>	
+											<div id="DEVSEPC" ></div>
+													
+										</div>
+										<div class="modal-footer">
+											 
+											<button type="button" class="btn btn-default" data-dismiss="modal">
+												Zamknij
+											</button> 
+											<button id="DodajUrządzeniejquery" type="button" class="btn btn-primary" > 
+												Dodaj
+											</button>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+		    </div>
+			
+			
+			 
+			</div>
+			
+           <div id="TwojDom" style="display:none">
+				 <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Twój dom</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row" id="PietraPokoje">    <!-- ADDONY -->
+				<div class="loader"></div>		
+							
+			</div>
+			
+			<div class="panel-footer text-right"> 
+				<button type="button" id="btnDodajPietro" href="#modal-container-btnDodajpietro"  data-toggle="modal" class="btn btn-default pull-right"> Dodaj Piętro </button> 
+				<div class="modal fade" data-keyboard="false" data-backdrop="false" id="modal-container-btnDodajpietro" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title text-left" >
+												Dodaj nowe Piętro
+											</h4>
+											
+										</div>
+										<div class="modal-body" id="DodajPietromodalbody">
+											
+											
+											<div class="form-inline">
+												<span  style="float:left" > Nazwa Piętra </span>	
+												 <input type="text" class="form-control"  id="inputDodajPietro">
+											
+											</div>	
+										</div>
+										<div class="modal-footer">
+											 
+											<button type="button" class="btn btn-default" data-dismiss="modal">
+												Zamknij
+											</button> 
+											<button id="btnDodajPietrojquery" type="button" class="btn btn-primary" > 
+												Dodaj
+											</button>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+				<button type="button" id="btnDodajPokoj" href="#modal-container-btnDodajpokoj"  data-toggle="modal" class="btn btn-default pull-right"> Dodaj Pokój </button> 
+				<div class="modal fade" data-keyboard="false" data-backdrop="false" id="modal-container-btnDodajpokoj" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content" >
+										<div class="modal-header">
+											<h4 class="modal-title text-left" >
+												Dodaj nowy Pokój
+											</h4>
+											
+										</div>
+										<div class="modal-body" id="DodajPokojmodalbody">
+											<div class="form-inline">
+												<span  style="float:left" > Piętro: </span>	
+												<div class="btn-group ">						 
+														<button class="btn btn-default "id="SETPietroo" href="">
+																brak
+																</button> 
+																	<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+																		<span class="caret"></span>
+																	</button>
+																		<ul class="dropdown-menu" id="GETListaPieter">
+														
+																		</ul>
+												</div>
+											</div>	
+											
+											<div class="form-inline">
+												<span  style="float:left" > Nazwa Pokoju: </span>	
+												 <input type="text" class="form-control"  id="inputDodajPokoj">
+											</div>	
+											
+													
+										</div>
+										<div class="modal-footer">
+											 
+											<button type="button" class="btn btn-default" data-dismiss="modal">
+												Zamknij
+											</button> 
+											<button id="DodajPokojjquery" type="button" class="btn btn-primary" > 
+												Dodaj
+											</button>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+            
+            
+           </div>
+            
+        </div>
+			
+		   <div id="PortyRasPi" style="display:none">
+				 <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Porty RaspberryPi3 b+</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        
+    <div class="container" >
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>3.3V</span></div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="pull-right"> <span>5V</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 2</span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="2">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="pull-right"> <span>5V</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 3</span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="3">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="pull-right"> <span>Ground</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 4</span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="4">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="14">
+          <div class="pull-right"> <span>GPIO 14</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>Ground</span></div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="15">
+          <div class="pull-right"> <span>GPIO 15</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 17</span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="17">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="18">
+          <div class="pull-right"> <span>GPIO 18</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 27 </span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="27">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="pull-right"> <span>Ground</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 22</span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="22">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="23">
+          <div class="pull-right"> <span>GPIO 23</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>3.3V</span></div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="24">
+          <div class="pull-right"> <span>GPIO 24</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 10 </span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="10">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="pull-right"><span>Ground</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 9 </span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="9">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="25">
+          <div class="pull-right"> <span>GPIO 25</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 11 </span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="11">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="8">
+          <div class="pull-right"> <span>GPIO 8 (CE0)</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>Ground</span></div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="7">
+          <div class="pull-right"> <span>GPIO 7 </span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>ID_SD</span></div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3"> 
+          <div class="pull-right"> <span>ID_SC</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 5</span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="5">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="pull-right"> <span>Ground</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 6</span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="6">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="12">
+          <div class="pull-right"> <span>GPIO 12</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 13</span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="13">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="pull-right"> <span>Ground</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 19</span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="19">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="16">
+          <div class="pull-right"> <span>GPIO 16</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>GPIO 26</span>
+          <div class="pull-right">
+            <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="26">
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="20">
+          <div class="pull-right"> <span>GPIO 20 /span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 "><span>Ground</span></div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <input class="gpio-checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="21">
+          <div class="pull-right"> <span>GPIO 21 </span></div>
+        </div>
+      </div>
+    </div>
+			
+			
+			
+			
+			
+			<div class="panel-footer text-right"> 
+				<button type="button" id="btnDodajPietro" href="#modal-container-btnDodajpietro"  data-toggle="modal" class="btn btn-default pull-right"> Dodaj Piętro </button> 
+				<div class="modal fade" data-keyboard="false" data-backdrop="false" id="modal-container-btnDodajpietro" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title text-left" >
+												Dodaj nowe Piętro
+											</h4>
+											
+										</div>
+										<div class="modal-body" id="DodajPietromodalbody">
+											
+											
+											<div class="form-inline">
+												<span  style="float:left" > Nazwa Piętra </span>	
+												 <input type="text" class="form-control"  id="inputDodajPietro">
+											
+											</div>	
+										</div>
+										<div class="modal-footer">
+											 
+											<button type="button" class="btn btn-default" data-dismiss="modal">
+												Zamknij
+											</button> 
+											<button id="btnDodajPietrojquery" type="button" class="btn btn-primary" > 
+												Dodaj
+											</button>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+				<button type="button" id="btnDodajPokoj" href="#modal-container-btnDodajpokoj"  data-toggle="modal" class="btn btn-default pull-right"> Dodaj Pokój </button> 
+				<div class="modal fade" data-keyboard="false" data-backdrop="false" id="modal-container-btnDodajpokoj" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content" >
+										<div class="modal-header">
+											<h4 class="modal-title text-left" >
+												Dodaj nowy Pokój
+											</h4>
+											
+										</div>
+										<div class="modal-body" id="DodajPokojmodalbody">
+											<div class="form-inline">
+												<span  style="float:left" > Piętro: </span>	
+												<div class="btn-group ">						 
+														<button class="btn btn-default "id="SETPietroo" href="">
+																brak
+																</button> 
+																	<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+																		<span class="caret"></span>
+																	</button>
+																		<ul class="dropdown-menu" id="GETListaPieter">
+														
+																		</ul>
+												</div>
+											</div>	
+											
+											<div class="form-inline">
+												<span  style="float:left" > Nazwa Pokoju: </span>	
+												 <input type="text" class="form-control"  id="inputDodajPokoj">
+											</div>	
+											
+													
+										</div>
+										<div class="modal-footer">
+											 
+											<button type="button" class="btn btn-default" data-dismiss="modal">
+												Zamknij
+											</button> 
+											<button id="DodajPokojjquery" type="button" class="btn btn-primary" > 
+												Dodaj
+											</button>
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+            
+            
+           </div>
+		   
+		   </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+			
+			<div id="Ustawienia" style="display:none">
+				
+			</div>
+    <!-- /#wrapper -->
+
+    
+
+   
+  
+
+    <!-- Custom Theme JavaScript -->
+    
+     <script src="/socket.io/socket.io.js"></script> 
+    <script>
+		
+		var socket = io();
+		var c=document.getElementById('myCanvas');
+		var ctx=c.getContext('2d');
+
+		socket.on('liveStream', function(info) {
+			var img=new Image();
+			img.onload=function(){	
+				
+			ctx.drawImage(img,0,0);
+		}
+			img.src='data:image/jpeg;base64,'+info.buffer;
+		
+			
+	});
+	
+	$('#S').click(function(){
+		
+		socket.emit('start-stream');
+			
+		});
+		
+  </script>
+
+</body>
+
+</html>

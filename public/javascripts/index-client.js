@@ -9,10 +9,13 @@ $(function(){
             type: 'POST',
             data: JSON.stringify(data),
             contentType: 'application/json',
-            url: 'http://localhost:9000/a/a',						
+            url: window.location.href+'/a',						
             error: function(data) {
             alert("Error");
             }
         });
-    });				
+    });	
+    
+    
+    			
 });
